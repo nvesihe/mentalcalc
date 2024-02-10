@@ -2,7 +2,7 @@ import random
 
 
 
-
+#Function for handling addition calculations.
 def addition():
   state = True
   while state:
@@ -18,6 +18,7 @@ def addition():
     else:
       print("Wrong! Answer is " + str(num))
 
+#Function to check that number from which to subtract is greater than number to be subtracted.
 def check():
   t = True
   while t: 
@@ -26,10 +27,10 @@ def check():
     if x < y:
       continue
     else:
-      substraction(x,y)
+      subtraction(x,y)
       
-      
-def substraction(x,y):
+#Function for handling subtraction calculations.     
+def subtraction(x,y):
     num = x-y
     print('{0} - {1}'.format(x,y))
     answer = int(input('(0 quits) Answer: '))
